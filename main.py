@@ -4,6 +4,8 @@ from funciton.horario import horarios
 from funciton.calcular_motoboy import calculate_order
 from funciton.gerar_link import gerar_link
 from funciton.calcular_correios import calcular_correio
+from funciton.obter_rastreio import obert_rastreio
+from funciton.welcome import welcome
 
 app = Flask(__name__)
 
@@ -12,7 +14,9 @@ HANDLERS = {
     'horario': horarios,
     'MotoBoy': calculate_order,
     'GerarLink': gerar_link,
-    'PrecoCorreio': calcular_correio
+    'PrecoCorreio': calcular_correio,
+    'CodigoRastreio': obert_rastreio,
+    'Welcomeboas': welcome
 }
 
 SERVER_HOST = '0.0.0.0'
